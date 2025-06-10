@@ -17,23 +17,23 @@ function resultCheck(){
             $(".cell"+b).addClass("win");
             $(".cell"+c).addClass("win");
             if(cellA==="X"){
-                $("h1").html("You win!🎉🎉<br>Press Any key to restart").addClass("game-over");
+                $("h1").html("You win!🎉🎉<br>Click anywhere to restart").addClass("game-over");
             }
             else{
-                $("h1").html("Computer Wins!<br>Press Any key to restart").addClass("game-over");
+                $("h1").html("Computer Wins!<br>Click anywhere to restart").addClass("game-over");
             }
             $(".cell").off("click");
             gameStarterDecide = !gameStarterDecide;
             compTurn = gameStarterDecide;
-            $(document).one("keydown", startGame);
+            $(document).one("click", startGame);
             return true;
         }
     }
     if(cellsAvailable===0){
-        $("h1").html("Draw<br>Press any key to restart").addClass("game-over");
+        $("h1").html("Draw<br>Click anywhere to restart").addClass("game-over");
         gameStarterDecide = !gameStarterDecide;
         compTurn = gameStarterDecide;
-        $(document).one("keydown", startGame);
+        $(document).one("click", startGame);
         return true;
     }
 
@@ -91,7 +91,7 @@ function userClick(){
     });
 }
 function gameStarts(){
-    $(document).one("keydown", startGame);
+    $(document).one("click", startGame);
 }
 function startGame(){
         cellIdentity = [1, 2, 3, 4, 5, 6, 7, 8, 9];
