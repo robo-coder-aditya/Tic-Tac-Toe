@@ -7,7 +7,7 @@ Play against a friend or challenge the computer!
 
 ## 🚀 Live Demo
 
-Once deployed, you can play here:  
+You can play here:  
 👉 https://robo-coder-aditya.github.io/Tic-Tac-Toe/
 
 ---
